@@ -1,11 +1,7 @@
-import os
+import streamlit as st
 
 class TwitterConfig:
-    CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
-    CONSUMER_SECRET = os.environ.get('CONSUMER_SECRET')
-    ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
-    ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
-
-if __name__ == '__main__':
-    print((os.environ.get('CONSUMER_KEY')))
-    print((os.environ.get('DB_USER')))
+    CONSUMER_KEY = st.secrets['CONSUMER_KEY']
+    CONSUMER_SECRET = st.secrets['CONSUMER_SECRET']
+    ACCESS_TOKEN = st.secrets['ACCESS_TOKEN']
+    ACCESS_TOKEN_SECRET = st.secrets['ACCESS_TOKEN_SECRET']

@@ -130,3 +130,7 @@ dmypy.json
 
 # Image generated
 images/twitter_cloud.png
+
+.vscode
+.streamlit
+.streamlit/secrets.toml
